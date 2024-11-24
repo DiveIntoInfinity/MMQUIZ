@@ -91,6 +91,7 @@ function checkAnswer(selected) {
     clearInterval(timer);
     const correct = quizData[currentQuestion].correct;
     const options = document.getElementsByClassName("option");
+    
     Array.from(options).forEach((btn, idx) => {
         if (idx === correct) {
             btn.classList.add("correct");
@@ -100,11 +101,13 @@ function checkAnswer(selected) {
         }
         btn.onclick = null;
     });
+
     if (selected === correct) {
         score += 10;
         document.getElementById("score").textContent = `Score: ${score} / 100`;
     }
-    document.getElementById("next-btn").style.display = "block";
+
+    setTimeout(showNextQuestion, 2000);
 }
 
 function showNextQuestion() {
@@ -121,12 +124,33 @@ function showNextQuestion() {
 function nextQuestion() {
     showNextQuestion();
 }
-
 function showFinalScore() {
     document.getElementById("quiz-container").innerHTML = `
         <h2>Your Final Score: ${score}/100</h2>
         <button class="btn" onclick="playAgain()">Play Again</button>
-        <button class="btn" onclick="goHome()">Home</button>`;
+        <button class="btn" onclick="goHome()">Home</button>
+        <button class="btn" id="share-quiz-btn">Share Your Score</button>
+    `;
+
+    document.getElementById('share-quiz-btn').addEventListener('click', shareScore);
+}
+
+function shareScore() {
+    const shareText = `I scored ${score}/100 on this awesome quiz! Can you beat my score?`;
+    const shareUrl = 'https://diveintoinfinity.github.io/MMQUIZ/'; 
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Quiz Score',
+            text: shareText,
+            url: shareUrl
+        })
+        .then(() => console.log('Share successful'))
+        .catch((error) => console.error('Error sharing:', error));
+    } else {
+
+        alert('Sharing is not supported in this browser. You can copy the link: ' + shareUrl);
+    }
 }
 
 function playAgain() {

@@ -132,7 +132,7 @@ h1 {
     color: #ffffff;
     font-size: 16px;
     position: absolute;
-    top: 20px;
+    top: 70px;
     right: 20px;
 }
 
@@ -157,8 +157,7 @@ h1 {
 }
 
 .option:hover {
-    background-color: #1e90ff; 
-    border-color: #1e90ff;
+    border-color: #ffffff;
 }
 
 .correct {
@@ -192,10 +191,6 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
-}
-
-.btn:hover {
-    background-color: #0a58ca; 
 }
 
 #next-btn {
