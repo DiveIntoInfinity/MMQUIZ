@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteorMind Sign In</title>
+    <link rel="icon" type="image/jpg" href="images/logo2.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="heading">
+                <h1>Sign in</h1>
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Username"><i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Email"><i class="fa-solid fa-envelope"></i>
+                <input type="password" placeholder="Password"><i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="details">
+                    <input type="checkbox" name="" id="">
+                    <span>Remember me</span>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Sign in">
+            </div>
+            <div class="sign-in">
+                <span>Don't have an account? <a href="">Sign up</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector('form');
+        const usernameInput = form.querySelector('input[type="text"]');
+        const emailInput = form.querySelector('input[type="email"]');
+        const passwordInput = form.querySelector('input[type="password"]');
+
+        // Validate username on blur (when the user leaves the input)
+        usernameInput.addEventListener('blur', function () {
+            const username = usernameInput.value.trim();
+            const usernameRegex = /^[a-z]{5,10}$/; // Only lowercase letters, 5 to 10 characters
+            
+            if (username && !usernameRegex.test(username)) {
+                alert("Username must be 5 to 10 lowercase letters and cannot contain special characters.");
+            }
+        });
+
+        // Validate email on blur
+        emailInput.addEventListener('blur', function () {
+            const email = emailInput.value.trim();
+            const emailRegex = /^[a-z0-9._%+-]+@gmail\.com$/; // Valid Gmail format
+            const atSymbolCount = (email.match(/@/g) || []).length; // Count occurrences of '@'
+            
+            if (email && (!emailRegex.test(email) || atSymbolCount !== 1)) {
+                alert("Email must be a valid Gmail address and can only contain one '@' character.");
+            }
+        });
+
+        // Validate password on blur
+        passwordInput.addEventListener('blur', function () {
+            const password = passwordInput.value.trim();
+            
+            if (password && password.length != 5) {
+                alert("Password must be more than 5 characters long.");
+            }
+        });
+
+        // Form submission handling
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission for validation
+            
+            const username = usernameInput.value.trim();
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // Check credentials
+            if (username === "admin" && password === "admin" && email === "admin@gmail.com") {
+                alert("Login successful!");
+                // Proceed with form submission or further actions
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        });
+    });
+</script>
+</html>

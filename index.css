@@ -1,0 +1,733 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:black;
+    padding-top:60px;
+  }
+  
+  nav {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a1526;
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-family: elephant;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.toggler div {
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0a1526;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggler {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .main-content {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: -80px;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 108%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .main h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+      text-shadow: 10px 15px 10px black;
+      font-family: 'BerkshireSwash-Regular';
+  }
+  
+  .main p {
+      font-size: 25px;
+      text-shadow: 0 0 0 black;
+      margin-bottom: 50px;
+      color:white;
+  }
+  
+  .start-btn {
+      background-color: #8fc0f0;
+      color: black;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 25px;
+      transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .start-btn:hover {
+      background-color: black;
+      color:white;
+  }
+
+  
+  .blog-section{
+    background-color: #0a1526;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:40px;
+    font-family: 'BerkshireSwash-Regular';
+    
+  }
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #0a1526;
+    color: white;
+    padding: 40px 40px 60px 40px;
+  }
+  
+  .update-card {
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    color: #001233;
+  }
+  
+  .update-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .update-card .content {
+    padding: 20px;
+  }
+  
+  .update-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .update-card p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .update-card button {
+    background-color: #0a1526;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius:50px;
+  }
+  
+  .update-card button:hover {
+    background-color: black;
+    color:white;
+  
+  }
+
+  .video-section {
+    padding: 0; 
+    text-align: center;
+    height: 130vh; 
+  }
+  
+  .video-container {
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    border: none;
+    border-radius: 0; 
+    overflow: hidden;
+    position: relative; 
+    background-color: #0a1526;
+  }
+
+  .stats-section {
+    background-color: #0a1526;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.stats-section {
+  background-color: #0a1526;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  margin: 20px;
+}
+
+.stat-item h2 {
+  font-size: 3.5em;
+  color: #8fc0f0;
+}
+
+.stat-item p {
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .stats {
+      flex-direction: column;
+      gap: 40px;
+  }
+
+  .stat-item h2 {
+      font-size: 2.5em;
+  }
+
+  .stat-item p {
+      font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stat-item h2 {
+      font-size: 2em;
+  }
+
+  .stat-item p {
+      font-size: 1em;
+  }
+}
+
+
+.queries-section {
+    background-color: #0a1526;
+    padding: 50px 20px;
+}
+
+.faq {
+    max-width: 95%;
+    margin: 10px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    font-family: 'BerkshireSwash-Regular';
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: #0a1526;
+    text-align: center;
+}
+
+details {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #0a1526;
+}
+
+summary {
+    font-size: 1.3em;
+    color: #0a1526;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+details p {
+    font-size: 1em;
+    color: #0a1526;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        padding: 30px;
+    }
+
+    .faq h2 {
+        font-size: 2em;
+    }
+
+    summary {
+        font-size: 1.2em;
+    }
+
+    details p {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq {
+        padding: 20px;
+    }
+
+    .faq h2 {
+        font-size: 1.8em;
+    }
+
+    summary {
+        font-size: 1em;
+    }
+
+    details p {
+        font-size: 0.9em;
+    }
+}
+
+.meteor-section {
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.meteor-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #0a1526;
+}
+
+.meteor-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+}
+
+.meteor-content h2 {
+  font-size: 3em;
+  font-family: 'BerkshireSwash-Regular';
+  margin-bottom: 20px;
+  color: white;
+}
+
+.get-started-btn {
+  background-color: #8fc0f0;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .meteor-content h2 {
+      font-size: 2.5em;
+  }
+
+  .get-started-btn {
+      font-size: 1.1em;
+      padding: 12px 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .meteor-content h2 {
+      font-size: 2em;
+  }
+
+  .get-started-btn {
+      font-size: 1em;
+      padding: 10px 15px; 
+      }
+}
+
+/* Section for person cards */
+#person-cards {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for card container */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Styling for each individual card */
+.card {
+  background-color: rgba(251, 250, 250, );
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  padding: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  border: white;
+}
+
+/* Image styling */
+.card img {
+  width: 95%;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #030303;
+  border-radius: 10px;
+}
+
+/* Name and designation styling */
+.card .info {
+  padding: 15px;
+}
+
+.card .name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fbf8f8;
+  margin: 0;
+}
+
+.card .designation {
+  font-size: 1em;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 200px; /* Make the cards a bit smaller on smaller screens */
+  }
+}
+
+/* Media query for extra small screens (mobile devices) */
+@media (max-width: 480px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+  .subscribe-section {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 80px;
+    }
+    
+    .subscribe-section h2 {
+      font-family: 'BerkshireSwash-Regular';
+      color: #0a1526;
+      font-size: 75px;
+    }
+    
+    .subscribe-section p {
+      color: #0a1526;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    
+    .email-box {
+      margin-top: 20px;
+    }
+  
+  
+    .email-box input[type="email"] {
+      padding: 10px;
+      width: 500px;
+      border: 2px solid #0a1526;
+      border-radius: 25px;
+      outline: none;
+      font-size: 16px;
+      text-align: center;
+    }
+    
+    .email-box button {
+      padding: 10px 40px;
+      background-color: #0a1526;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+footer {
+  background-color: #0a1526;
+  padding: 80px 20px;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  width:100%;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  margin-bottom:15px;
+}
+
+.footer-section h3 a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-section h3 a:hover {
+  color: #8fc0f0;
+}
+    
+    
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-right:10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #8fc0f0;
+}
+
+.copyright {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #8fc0f0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #0a1526;
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 36px;
+  }
+  .main p {
+    font-size: 16px;
+  }
+  .nav ul {
+    display: none;
+  }
+  .login-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .update-card {
+    width: 100%;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .stat-item {
+    margin-bottom: 20px;
+  }
+  .faq {
+    padding: 20px;
+  }
+  .email-box input[type="email"] {
+    width: 100%;
+  }
+  .email-box button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 48px;
+  }
+  .main p {
+    font-size: 20px;
+  }
+  .nav ul {
+    display: none;
+  }
+  .login-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .update-card {
+    width: 45%;
+  }
+  .stats {
+    flex-direction: row;
+  }
+  .stat-item {
+    margin-bottom: 0;
+  }
+  .faq {
+    padding: 40px;
+  }
+  .email-box input[type="email"] {
+    width: 80%;
+  }
+  .email-box button {
+    margin-left: 10px;
+  }
+}
