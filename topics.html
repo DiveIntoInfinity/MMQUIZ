@@ -360,14 +360,19 @@ span {
         margin-bottom: 20px; /* Add space between stacked cards */
     }
 
-    .intro {
+    .card .intro p {
+        visibility: visible !important; /* Force visibility */
+        opacity: 1 !important; /* Ensure it's visible */
+    }
+
+  .intro {
         height: auto; /* Ensure intro text is always visible */
         background: rgba(27, 27, 27, 0.25);
         opacity: 1; /* Make it fully visible */
         bottom: 0;
         padding: 10px;
     }
-
+    
     .intro span {
         font-size: 4vw; /* Adjust font size for small screens */
         text-align: center;
@@ -375,8 +380,8 @@ span {
     }
 
     .blog-section h1 {
-        font-size: 6vw; /* Adjust heading size for small screens */
-        margin-bottom: 20px; /* Add space below the heading */
+        font-size: 6vw;
+        margin-bottom: 20px;
     }
 }
 
