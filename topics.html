@@ -16,10 +16,10 @@
         </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="">Blog</a></li>
             <li><a href="topics.html">Quizzes</a></li>
-            <li><a href="#">Leaderboard</a></li>
-            <li><a href="#stats">About Us</a></li>
+            <li><a href="">Leaderboard</a></li>
+            <li><a href="">About Us</a></li>
         </ul>
 
         <div class="toggler" id="toggler">
@@ -246,18 +246,19 @@ body {
 }
 
 .blog-section {
-    margin-top: 90px; /* Adjust this value based on the height of your navbar */
-    text-align: center; /* Center the heading text */
+    margin-top: 120px; /* Adjusted to account for the navbar height */
+    text-align: center;
+    padding: 10px; /* Add padding for spacing */
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow cards to wrap */
-  gap: 20px; /* Spacing between cards */
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .card {
@@ -342,6 +343,43 @@ span {
 .card:hover img {
   transform: scale(1.1) rotate(-1deg);
 }
+
+@media screen and (max-width: 768px) {
+    .blog-section {
+        margin-top:1400px; /* Further increase margin to avoid any overlap */
+    }
+
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align stacked cards */
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%; /* Ensure cards fit small screens */
+        margin-bottom: 20px; /* Add space between stacked cards */
+    }
+
+    .intro {
+        height: auto; /* Ensure intro text is always visible */
+        background: rgba(27, 27, 27, 0.25);
+        opacity: 1; /* Make it fully visible */
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .intro span {
+        font-size: 4vw; /* Adjust font size for small screens */
+        text-align: center;
+        display: flex;
+    }
+
+    .blog-section h1 {
+        font-size: 6vw; /* Adjust heading size for small screens */
+        margin-bottom: 20px; /* Add space below the heading */
+    }
+}
+
 </style>
 
 <script>
