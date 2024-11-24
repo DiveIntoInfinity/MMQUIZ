@@ -1,55 +1,56 @@
 const quizData = [
     {
-        question: "What is the primary evidence for the existence of dark matter?",
-        options: ["A) Gravitational lensing", "B) Cosmic microwave background", "C) Dark energy", "D) Galactic rotation curves"],
+        question: "What does dark matter not emit?",
+        options: ["A) Light", "B) Heat", "C) Radiation", "D) All of these"],
         correct: 3
     },
     {
-        question: "What percentage of the universe is believed to be made of dark matter?",
-        options: ["A) 10%", "B) 25%", "C) 50%", "D) 85%"],
+        question: "What is dark matter detected by?",
+        options: ["A) Light", "B) Gravity", "C) X-rays", "D) Neutrinos"],
         correct: 1
     },
     {
-        question: "What type of particles are hypothesized to make up dark matter?",
-        options: ["A) Neutrinos", "B) Photons", "C) WIMPs", "D) Electrons"],
-        correct: 2
-    },
-    {
-        question: "Which of the following does dark matter NOT do?",
-        options: ["A) Interact via gravity", "B) Absorb light", "C) Emit radiation", "D) Weigh galaxies"],
-        correct: 2
-    },
-    {
-        question: "Which space telescope helped provide evidence for dark matter?",
-        options: ["A) Hubble", "B) James Webb", "C) Chandra", "D) Kepler"],
+        question: "What percent of the universe is dark matter?",
+        options: ["A) 27%", "B) 50%", "C) 70%", "D) 90%"],
         correct: 0
     },
     {
-        question: "Dark matter cannot be detected by which of the following methods?",
-        options: ["A) Gravitational lensing", "B) Emission of X-rays", "C) Visible light detection", "D) Radio waves"],
+        question: "Which galaxy property suggests dark matter exists?",
+        options: ["A) Color", "B) Shape", "C) Rotation", "D) Size"],
         correct: 2
     },
     {
-        question: "The mass of dark matter is primarily responsible for the:",
-        options: ["A) Expansion of the universe", "B) Rotation of galaxies", "C) Formation of stars", "D) Formation of black holes"],
+        question: "What particles might make up dark matter?",
+        options: ["A) Quarks", "B) WIMPs", "C) Neutrons", "D) Gluons"],
         correct: 1
     },
     {
-        question: "Which of the following galaxies shows a large amount of dark matter?",
-        options: ["A) Milky Way", "B) Andromeda", "C) Messier 87", "D) NGC 253"],
+        question: "Dark matter interacts mainly through:",
+        options: ["A) Gravity", "B) Light", "C) Heat", "D) Sound"],
         correct: 0
     },
     {
-        question: "What is the hypothetical name for dark matter particles?",
-        options: ["A) Higgs bosons", "B) WIMPs", "C) Quarks", "D) Gluons"],
+        question: "What evidence supports dark matter?",
+        options: ["A) Star colors", "B) Galaxy rotation", "C) Supernovae", "D) Cosmic rays"],
         correct: 1
     },
     {
-        question: "Dark matter is thought to interact primarily through which force?",
-        options: ["A) Strong nuclear force", "B) Electromagnetic force", "C) Gravity", "D) Weak nuclear force"],
-        correct: 2
+        question: "What tool detects dark matter effects?",
+        options: ["A) Microscopes", "B) Space telescopes", "C) Radio telescopes", "D) Gravity maps"],
+        correct: 3
+    },
+    {
+        question: "Dark matter helps explain:",
+        options: ["A) Black holes", "B) Galaxy formation", "C) Planet orbits", "D) Solar flares"],
+        correct: 1
+    },
+    {
+        question: "What kind of matter is visible?",
+        options: ["A) Baryonic", "B) Dark", "C) Antimatter", "D) Quantum"],
+        correct: 0
     }
 ];
+
 
 
 let currentQuestion = 0;
