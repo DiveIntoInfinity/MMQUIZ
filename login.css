@@ -200,28 +200,28 @@ i{
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px;
     }
 
     .input-container input {
-        height: 30px; /* Smaller height for smaller screens */
+        height: 30px;
     }
 
     .submit-btn input {
-        height: 30px; /* Smaller height for smaller screens */
+        height: 30px; 
     }
 
     .details {
-        font-size: 9px; /* Smaller font size for smaller screens */
+        font-size: 9px;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        width: 95%; /* Adjust width for very small screens */
+        width: 95%; 
     }
 
     .input-container input {
-        width: 90%; /* Increase width for smaller screens */
+        width: 90%;
     }
 }

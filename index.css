@@ -14,12 +14,12 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: black;
     padding-top: 60px;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; 
 }
 
 nav {
     margin-top: 0;
-    width: 100vw; /* Use full viewport width */
+    width: 100vw; 
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     background: linear-gradient(135deg, #1a1a2e, #16213e);
-    background-image: url('../images/Pic1.png');
+    background-image: url('6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

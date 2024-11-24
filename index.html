@@ -212,6 +212,15 @@
   <p class="copyright">&copy; 2024 Meteor Mind. All rights reserved.</p>
 </footer>
 
+<script>
+    const toggler = document.getElementById('toggler');
+const navLinks = document.getElementById('nav-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
+
 <script src="index.js"></script>
 
 </body>
