@@ -12,7 +12,7 @@
 
     <nav>
         <div class="logo">
-            <a href="index.html">
+            <a href="">
                 <img src="images/logo2.jpg" alt="Logo" class="logo-img"></a>
                 <span>eteorMind</span>
         </div>
@@ -44,6 +44,7 @@
                     <input type="checkbox" name="" id="">
                     <span>Remember me</span>
             </div>
+            <br>
             <div class="submit-btn">
                 <input type="submit" value="Sign in">
             </div>
@@ -96,6 +97,7 @@
 
             if (username === "admin" && password === "admin" && email === "admin@gmail.com") {
                 alert("Login successful!");
+                window.location.href = "index.html";
             } else {
                 alert("Invalid credentials. Please try again.");
             }
