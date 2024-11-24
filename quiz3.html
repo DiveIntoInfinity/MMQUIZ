@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MeteorMind Quiz</title>
+        <link rel="icon" type="image/jpg" href="images/logo2.jpg">
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="images/logo2.jpg" alt="Logo" class="logo-img">
+                <span>eteorMind</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="topics.html">Quizzes</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#stats">About Us</a></li>
+            </ul>
+            <div class="toggler" id="toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="quiz-container">
+            <div id="score">Score: 0 / 100</div>
+            <div id="timer">Time Left: <span id="time">10</span>s</div>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="result"></div>
+            <button id="next-btn" class="btn" onclick="nextQuestion()">Next</button>
+            <div id="progress">1 of 10 Questions</div>
+        </div>
+        <script src="quiz3.js"></script>
+
+        <script>
+            const toggler = document.getElementById('toggler');
+        const navLinks = document.getElementById('nav-links');
+        toggler.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        </script>
+        
+    </body>
+    </html>
+    
+

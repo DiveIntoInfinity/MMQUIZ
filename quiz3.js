@@ -1,55 +1,56 @@
 const quizData = [
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
+        question: "Which galaxy is closest to the Milky Way?",
+        options: ["A) Andromeda", "B) Triangulum", "C) Whirlpool", "D) Messier 87"],
+        correct: 0
+    },
+    {
+        question: "What is the shape of the Milky Way galaxy?",
+        options: ["A) Elliptical", "B) Spiral", "C) Irregular", "D) Lenticular"],
         correct: 1
     },
     {
-        question: "What is the name of the galaxy that contains our Solar System?",
-        options: ["A) Andromeda", "B) Whirlpool", "C) Milky Way", "D) Triangulum"],
+        question: "How many stars are estimated to be in the Milky Way galaxy?",
+        options: ["A) 100 million", "B) 1 billion", "C) 100 billion", "D) 1 trillion"],
         correct: 2
     },
     {
-        question: "What is the largest planet in our Solar System?",
-        options: ["A) Venus", "B) Neptune", "C) Earth", "D) Jupiter"],
+        question: "Which galaxy is known for its irregular shape?",
+        options: ["A) Andromeda", "B) Milky Way", "C) Messier 87", "D) Large Magellanic Cloud"],
         correct: 3
     },
     {
-        question: "Which planet has the most extensive ring system?",
-        options: ["A) Saturn", "B) Uranus", "C) Neptune", "D) Mars"],
+        question: "What is the most common type of galaxy in the universe?",
+        options: ["A) Elliptical", "B) Spiral", "C) Irregular", "D) Lenticular"],
         correct: 0
     },
     {
-        question: "Which planet is closest to the Sun?",
-        options: ["A) Mercury", "B) Venus", "C) Earth", "D) Mars"],
-        correct: 0
-    },
-    {
-        question: "How long does it take for light from the Sun to reach Earth?",
-        options: ["A) 5 minutes", "B) 8 minutes", "C) 15 minutes", "D) 20 minutes"],
-        correct: 1
-    },
-    {
-        question: "Which celestial object is known as the Evening Star?",
-        options: ["A) Mars", "B) Venus", "C) Jupiter", "D) Mercury"],
-        correct: 1
-    },
-    {
-        question: "What is the hottest planet in the Solar System?",
-        options: ["A) Venus", "B) Mercury", "C) Mars", "D) Earth"],
-        correct: 0
-    },
-    {
-        question: "Which planet has the highest number of moons?",
-        options: ["A) Jupiter", "B) Saturn", "C) Neptune", "D) Uranus"],
-        correct: 1
-    },
-    {
-        question: "What type of galaxy is the Milky Way?",
+        question: "What type of galaxy is the Andromeda Galaxy?",
         options: ["A) Elliptical", "B) Irregular", "C) Spiral", "D) Lenticular"],
+        correct: 2
+    },
+    {
+        question: "How far away is the Andromeda Galaxy from the Milky Way?",
+        options: ["A) 2 million light years", "B) 5 million light years", "C) 10 million light years", "D) 50 million light years"],
+        correct: 0
+    },
+    {
+        question: "Which galaxy is the largest in the Local Group of galaxies?",
+        options: ["A) Milky Way", "B) Andromeda", "C) Messier 87", "D) NGC 253"],
+        correct: 1
+    },
+    {
+        question: "The core of most galaxies contains a:",
+        options: ["A) Black hole", "B) Nebula", "C) Supernova", "D) Quasar"],
+        correct: 0
+    },
+    {
+        question: "Which of the following is NOT a type of galaxy?",
+        options: ["A) Lenticular", "B) Elliptical", "C) Planetary", "D) Irregular"],
         correct: 2
     }
 ];
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -152,6 +153,7 @@ function shareScore() {
         alert('Sharing is not supported in this browser. You can copy the link: ' + shareUrl);
     }
 }
+
 
 function playAgain() {
     currentQuestion = 0;
