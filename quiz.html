@@ -14,10 +14,10 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="topics.html">Quizzes</a></li>
                 <li><a href="#">Leaderboard</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#stats">About Us</a></li>
             </ul>
             <div class="toggler" id="toggler">
                 <div></div>
@@ -36,9 +36,18 @@
             <div id="progress">1 of 10 Questions</div>
         </div>
         <script src="quiz.js"></script>
+
+        <script>
+            const toggler = document.getElementById('toggler');
+        const navLinks = document.getElementById('nav-links');
+        
+        toggler.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        </script>
+        
     </body>
     </html>
     
-</body>
-</html>
 

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteorMind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" type="image" href="images/logo2.jpg">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"> 
+                <img src="images/logo.png" alt="Logo" class="logo-img"></a>
+            
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="topics.html">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#stats">About Us</a></li>
+        </ul>
+
+        <div class="toggler" id="toggler">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+        <section class="blog-section">
+         <h1>Select Your Topic For Quiz </h1>
+       </section>
+       <div class="container">
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t1.png" alt="img">
+                <div class="intro">
+                    <p>
+                        <span>Planetary Science</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t2.jpeg" class="object-fit-cover border rounded" alt="img">
+                <div class="intro">
+                    <p>
+                        <span>Dark Matter</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t3.jpeg" alt="img">
+                <div class="intro">
+                    <p>
+                        <span>Galactic Cluster</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Second Row -->
+    <div class="container">
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t4.jpeg" alt="Space 1">
+                <div class="intro">
+                    <p>
+                        <span>Space Exploration</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t5.jpeg" alt="Space 2">
+                <div class="intro">
+                    <p>
+                        <span>Stellar Evolution</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t6.jpg" alt="Space 3">
+                <div class="intro">
+                    <p>
+                        <span>Alien Life</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Third Row -->
+    <div class="container">
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t7.jpeg" alt="Galaxy 1">
+                <div class="intro">
+                    <p>
+                        <span>Exoplanet Discovery</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxM3hma3xcqjjuUWt096pZgGloaE9lyX0TXQ&s" alt="Galaxy 2">
+                <div class="intro">
+                    <p>
+                        <span>Time Travel</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="quiz.html">
+                <img src="images/t9.jpeg" alt="Galaxy 3">
+                <div class="intro">
+                    <p>
+                        <span>Nebula</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav {
+    margin-top: 0;
+    width: 100vw; /* Use full viewport width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a1526;
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+
+.logo-img {
+    width: 220px;
+    height: 65px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.toggler div {
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0a1526;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggler {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0a1526;
+  color: white;
+  padding: 0;
+  position: relative;
+}
+
+.blog-section {
+    margin-top: 90px; /* Adjust this value based on the height of your navbar */
+    text-align: center; /* Center the heading text */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  height: 160px;
+  width: 260px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  transition: transform 0.25s ease-in;
+  border-radius:20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border: 5px white;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.intro {
+  height: 30px;
+  width: 300px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(111, 108, 108, 0.05);
+  color: white;
+  bottom: 75px;
+  transition: height 0.15s, opacity 0.15s;
+}
+.card a {
+    display: block; /* Makes the anchor cover the entire card */
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline from text */
+    height: 100%; /* Ensures the anchor covers the full height of the card */
+}
+
+.intro span {
+    cursor: pointer; /* Changes cursor to pointer when hovering over the span */
+}
+
+h1 {
+  font-size: 2.5vw;
+  margin-top :20px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s, visibility 0.15s;
+}
+
+span {
+  font-weight: bold;
+  margin-top: 3px;
+  color: white;
+  font-size: larger;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 52px;
+  opacity: 0.95;
+  background: rgba(27, 27, 27, 0.25);
+}
+
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img {
+  transform: scale(1.1) rotate(-1deg);
+}
+</style>
+
+<script>
+    const toggler = document.getElementById('toggler');
+const navLinks = document.getElementById('nav-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+</script>
+
+</body>
+</html>
