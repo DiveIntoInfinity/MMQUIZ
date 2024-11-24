@@ -5,16 +5,21 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+}
   
-  body {
+body {
     font-family: 'Arial', sans-serif;
-    background-color:black;
-    padding-top:60px;
-  }
-  
-  nav {
-    margin-top: 0px;
-    width: 100%;
+    background-color: black;
+    padding-top: 60px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+nav {
+    margin-top: 0;
+    width: 100vw; /* Use full viewport width */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +71,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: auto;
 }
 
 .toggler div {

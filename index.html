@@ -11,18 +11,20 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"> <!-- Hyperlink for the logo image and name -->
-                <img src="images/logo2.jpg" alt="Logo" class="logo-img"> <!-- Logo Image --></a>
-                <span>eteorMind</span> <!-- Name of the website -->
+            <a href="index.html"> 
+                <img src="images/logo2.jpg" alt="Logo" class="logo-img"></a>
+                <span>eteorMind</span> 
             
         </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="#stats">About Us</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
             <li><a href="#">Leaderboard</a></li>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="#">About Us</a></li>
         </ul>
+
         <div class="toggler" id="toggler">
             <div></div>
             <div></div>
@@ -38,13 +40,13 @@
         <div class="main-content">
             <h1>Meteor Mind</h1>
             <p>Where Curiosity Meets the Cosmos!</p>
-            <a href="login.html" class="start-btn">Start Quiz</a>
+            <a href="quiz.html" class="start-btn">Start Quiz</a>
         </div>
     </section>
 
-<section class="blog-section">
+<section class="blog-section" id="blog">
   <h1>Meteor Mind Latest News~!!</h1>
-  </section>
+</section>
     <section class="blog">
       <div class="update-card">
           <img src="images/ap1.jpg" alt="Mars Launch">
@@ -96,22 +98,22 @@
     </div>
 </section>
 
-    <section class="stats-section">
-        <div class="stats">
-            <div class="stat-item">
-                <h2>1000+</h2>
-                <p>Quizzes Taken</p>
-            </div>
-            <div class="stat-item">
-                <h2>500+</h2>
-                <p>Galactic Questions</p>
-            </div>
-            <div class="stat-item">
-                <h2>99%</h2>
-                <p>Satisfaction Rate</p>
-            </div>
+<section class="stats-section" id="stats">
+    <div class="stats">
+        <div class="stat-item">
+            <h2>1000+</h2>
+            <p>Quizzes Taken</p>
         </div>
-    </section>
+        <div class="stat-item">
+            <h2>500+</h2>
+            <p>Galactic Questions</p>
+        </div>
+        <div class="stat-item">
+            <h2>99%</h2>
+            <p>Satisfaction Rate</p>
+        </div>
+    </div>
+</section>
 
     <section class="queries-section">
         <div class="faq">
@@ -151,15 +153,13 @@
         </div>
       </section>
 
-<section>
-      <div class="subscribe-section">
-      <h2>Subscribe our Newsletter!!</h2>
-      <p>Subscribe to us for latest updates, research papers, special offers and wild content..</p>
-      <div class="email-box">
-          <input type="email" placeholder="Email">
-          <button>Subscribe</button>
-      </div>
-  </div>
+<section class="subscribe-section" id="subscribe">
+    <h2>Subscribe our Newsletter!!</h2>
+    <p>Subscribe to us for latest updates, research papers, special offers and wild content..</p>
+    <div class="email-box">
+        <input type="email" placeholder="Email">
+        <button>Subscribe</button>
+    </div>
 </section>
 
 <footer>
