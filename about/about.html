@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - Learn more about our interactive quiz website">
+    <link rel="icon" type="image/jpg" href="../images/logo2.jpg">
+    <title>MeteorMind About Us</title>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <a href="../index.html"> 
+            <img src="/images/logo2.jpg" alt="Logo" class="logo-img"></a>
+            <span>eteorMind</span> 
+        
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+        <li><a href="../topics.html">Quizzes</a></li>
+        <li><a href="../index.html#stats">Stats</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+    </ul>
+
+    <div class="toggler" id="toggler">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Meteor Mind</h1>
+            <h2>Your ultimate quiz destination for fun and learning!</h2>
+        </div>
+    </section>
+
+    <section class="our-mission">
+        <div class="mission-container">
+            <div class="mission-box">
+                <h3>Fun & Entertainment</h3>
+                <p>Our quizzes are designed to keep you entertained while expanding your knowledge on a wide range of topics!</p>
+            </div>
+            <div class="mission-box">
+                <h3>Learning Through Play</h3>
+                <p>We strive to make learning feel less like a chore and more like a game. Test yourself and challenge your friends!</p>
+            </div>
+            <div class="mission-box">
+                <h3>Community Engagement</h3>
+                <p>QuizMaster isn't just about individual performance. Our quizzes bring people together for friendly competition and shared experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="team-members">
+            <div class="team-member">
+            <a href="https://www.linkedin.com/in/abhinavpreet-singh-arora"> <img src="aps.jpg" alt="Team member 1"></a>
+                <h3>Abhinavpreet Singh</h3>
+                <p>Team Lead, FullStack</p>
+                <p>mastermind behind MeteorMind, passionate about quizzes and making learning more interactive.</p>
+            </div>
+            <div class="team-member">
+                <img src="ak.jpg" alt="Team member 2">
+                <h3>Abhishek Kumar</h3>
+                <p>UI/UX, Creative Director </p>
+                <p>brings creativity to life, constantly innovating new ways to improve the user experience.</p>
+            </div>
+            <div class="team-member">
+                <img src="en.jpg" alt="Team member 3">
+                <h3>Ekagamjot Singh</h3>
+                <p>Head of Quality Assurance</p>
+                <p>ensures the platform runs smoothly, designing engaging quizzes that are fun .</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 MeteorMind | All rights reserved</p>
+    </footer>
+
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.4;
+        margin-top:60px;
+      }
+      
+nav {
+    margin-top: 0;
+    width: 100vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a1526;
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-family: elephant;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.toggler div {
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0a1526;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggler {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+      
+      .hero {
+        background: #0a1526;
+        padding: 18px 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        color: #fff;
+      }
+      
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      
+      .hero p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+      }
+      
+      .about {
+        background-color: #fff;
+        padding: 50px 0;
+      }
+      
+      .about-image img{
+         
+        border-radius: 8px;
+        width: 470px;
+        height: 80%;
+      }
+      
+      .container {
+        width: 82%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .about-content {
+        flex: 1;
+        padding-right: 20px;
+        max-width: 50%;
+      }
+      
+      
+      .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .about p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 20px;
+      }
+      
+      .our-mission {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      
+      .mission-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .mission-box {
+        background-color: #fff;
+        width: 30%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .mission-box:hover {
+        transform: translateY(-10px);
+      }
+      
+      .mission-box h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      
+      .mission-box p {
+        font-size: 1rem;
+        color: #666;
+      }
+      
+      .team {
+        padding: 50px 0;
+        background-color: #0a1526;
+        color: #f9f9f9;
+      }
+      
+      .team-members {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px;
+        color: white;
+      }
+      
+      .team-member {
+        text-align: center;
+        width: 30%;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+      }
+      
+      .team-member:hover {
+        transform: translateY(-10px);
+      }
+      .team-member:hover img {
+        width: 69%;
+        border-radius:15px;
+      }
+      
+      .team-member img {
+        width: 57%;
+        border-radius: 25px;
+        margin-bottom: 20px;
+      }
+      
+      .team-member h3 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+      
+      .team-member p {
+        color: #888;
+      }
+      
+      footer {
+        background-color: #0a1526;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+      }
+      
+      footer p {
+        font-size: 1rem;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        .about-content,
+        .about-image {
+            max-width: 100%;
+        }
+      
+        .mission-container {
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        .mission-box {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+      
+        .team-members {
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        .team-member {
+            width: 80%;
+        }
+      }
+      
+      </style>
+
+
+</body>
+</html>
+
+
